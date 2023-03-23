@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main(void){
+	struct Employee{
+		int id;
+		int dob;
+		char name[20];
+		float salary;
+	};
+	struct Employee emp;
+	emp.dob=2008;
+    strcpy(emp.name,"Bhanu");
+	emp.salary=80000;
+	printf("NAME=%s\n SALARY = %f\n DOB=%i",emp.name,emp.salary,emp.dob);
+}
